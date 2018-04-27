@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">NewsApp</string>
+    <string name="app_name">California News</string>
+    <string name="article_title">News Article Title</string>
+    <string name="section_label">Section:</string>
+    <string name="section_name">Section Name</string>
+    <string name="author_label">Author:</string>
+    <string name="author_name">Author Name</string>
+    <string name="placeholder_date">Mar 26, 2016</string>
+    <string name="placeholder_time">3:00 PM</string>
+
+    <string name="no_news">No news articles found.</string>
+    <string name="no_internet">No Internet Connection.</string>
 </resources>

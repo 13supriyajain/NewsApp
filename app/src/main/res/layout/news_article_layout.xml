@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/article_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            tools:text="@string/article_title" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/section_label" />
+
+            <TextView
+                android:id="@+id/article_section"
+                style="@style/NewsInfoText"
+                tools:text="@string/section_name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/author_name_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="@string/author_label" />
+
+            <TextView
+                android:id="@+id/article_author"
+                style="@style/NewsInfoText"
+                tools:text="@string/author_name" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/article_date"
+            style="@style/NewsInfoText"
+            android:layout_gravity="end"
+            tools:text="@string/placeholder_date" />
+
+        <TextView
+            android:id="@+id/article_time"
+            style="@style/NewsInfoText"
+            android:layout_gravity="end"
+            tools:text="@string/placeholder_time" />
+
+    </LinearLayout>
+
+</LinearLayout>
